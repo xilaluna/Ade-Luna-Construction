@@ -8,6 +8,8 @@ import Button from "@mui/material/Button"
 
 import heroImage from "../../assets/images/hero.jpg"
 
+import { Link as RouterLink } from "react-router-dom"
+
 const Hero = () => {
   return (
     <Box
@@ -36,8 +38,12 @@ const Hero = () => {
           simply skip over it entirely.
         </Typography>
         <Stack sx={{ pt: 4 }} direction="row" spacing={2} justifyContent="center">
-          <Button variant="contained">Learn More</Button>
-          <Button variant="outlined">Contact Us</Button>
+          <Button component={RouterLink} to="/about" variant="contained">
+            Learn More
+          </Button>
+          <Button component={RouterLink} to="/contact" variant="outlined">
+            Contact Us
+          </Button>
         </Stack>
       </Container>
     </Box>
