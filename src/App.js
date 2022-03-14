@@ -1,6 +1,7 @@
 import React from "react"
 
 import Navbar from "./components/Navbar/Navbar"
+import Footer from "./components/Footer/Footer"
 import Home from "./pages/Home"
 import About from "./pages/About"
 import Services from "./pages/Services"
@@ -20,6 +21,7 @@ function App() {
         <Route path="projects" element={<Projects />} />
         <Route path="contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </React.Fragment>
   )
 }
