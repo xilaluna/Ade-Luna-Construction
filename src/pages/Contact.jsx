@@ -8,7 +8,7 @@ import ContactForm from "../components/ContactForm/ContactForm"
 const Contact = () => {
   return (
     <React.Fragment>
-      <Typography variant="h3" sx={{ textAlign: "center", py: 4 }}>
+      <Typography variant="h3" sx={{ textAlign: "center", py: 6 }}>
         Contact
       </Typography>
       <Container maxWidth="md">

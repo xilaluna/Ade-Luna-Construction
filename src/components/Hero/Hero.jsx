@@ -6,18 +6,18 @@ import Typography from "@mui/material/Typography"
 import Stack from "@mui/material/Stack"
 import Button from "@mui/material/Button"
 
-import heroImage from "../../assets/images/hero.jpg"
-
 import { Link as RouterLink } from "react-router-dom"
 
 const Hero = () => {
   return (
     <Box
       sx={{
-        backgroundImage: `url(${heroImage})`,
+        backgroundImage:
+          "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://source.unsplash.com/random)",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "center",
+
         pt: 8,
         pb: 6,
       }}
@@ -27,12 +27,12 @@ const Hero = () => {
           component="h1"
           variant="h2"
           align="center"
-          color="text.primary"
+          color="grey.200"
           gutterBottom
         >
           Ade Luna Construction
         </Typography>
-        <Typography variant="h5" align="center" color="text.secondary" paragraph>
+        <Typography variant="h5" align="center" color="grey.400" paragraph>
           Something short and leading about the collection below—its contents, the
           creator, etc. Make it short and sweet, but not too short so folks don&apos;t
           simply skip over it entirely.
@@ -41,7 +41,14 @@ const Hero = () => {
           <Button component={RouterLink} to="/about" variant="contained">
             Learn More
           </Button>
-          <Button component={RouterLink} to="/contact" variant="outlined">
+          <Button
+            component={RouterLink}
+            to="/contact"
+            variant="outlined"
+            sx={{
+              color: "white",
+            }}
+          >
             Contact Us
           </Button>
         </Stack>
