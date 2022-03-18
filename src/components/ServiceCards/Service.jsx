@@ -1,7 +1,16 @@
 import React from "react"
 
-const Service = () => {
-  return <div>Service</div>
+import Grid from "@mui/material/Grid"
+import Typography from "@mui/material/Typography"
+
+const Service = (props) => {
+  const { service, description } = props
+  return (
+    <Grid item>
+      <Typography>{service}</Typography>
+      <Typography>{description}</Typography>
+    </Grid>
+  )
 }
 
 export default Service

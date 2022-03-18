@@ -11,7 +11,7 @@ const Contact = () => {
       <Typography variant="h3" sx={{ textAlign: "center", py: 6 }}>
         Contact
       </Typography>
-      <Container maxWidth="md">
+      <Container maxWidth="sm">
         <ContactForm />
       </Container>
     </React.Fragment>

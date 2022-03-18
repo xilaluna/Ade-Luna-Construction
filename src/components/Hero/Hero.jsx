@@ -27,12 +27,12 @@ const Hero = () => {
           component="h1"
           variant="h2"
           align="center"
-          color="grey.200"
+          color="primary.contrastText"
           gutterBottom
         >
           Ade Luna Construction
         </Typography>
-        <Typography variant="h5" align="center" color="grey.400" paragraph>
+        <Typography variant="h5" align="center" color="grey.300" paragraph>
           Something short and leading about the collection below—its contents, the
           creator, etc. Make it short and sweet, but not too short so folks don&apos;t
           simply skip over it entirely.
@@ -41,14 +41,7 @@ const Hero = () => {
           <Button component={RouterLink} to="/about" variant="contained">
             Learn More
           </Button>
-          <Button
-            component={RouterLink}
-            to="/contact"
-            variant="outlined"
-            sx={{
-              color: "white",
-            }}
-          >
+          <Button component={RouterLink} to="/contact" variant="contained">
             Contact Us
           </Button>
         </Stack>
