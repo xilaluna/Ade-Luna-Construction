@@ -18,8 +18,7 @@ const Hero = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
 
-        pt: 8,
-        pb: 6,
+        py: 12,
       }}
     >
       <Container maxWidth="sm">
