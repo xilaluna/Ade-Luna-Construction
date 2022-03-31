@@ -11,7 +11,7 @@ import { Link as RouterLink } from "react-router-dom"
 const CallToAction = () => {
   return (
     <Container maxWidth="sm" sx={{ py: 12 }}>
-      <Box sx={{ textAlign: "center", pb: 2 }}>
+      <Box sx={{ textAlign: "center", pb: 1 }}>
         <ConnectWithoutContactIcon sx={{ fontSize: 50 }} />
       </Box>
       <Typography align="center" variant="h3" component="p">
