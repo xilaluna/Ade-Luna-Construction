@@ -2,6 +2,7 @@ import React from "react"
 
 import Typography from "@mui/material/Typography"
 import Container from "@mui/material/Container"
+import Box from "@mui/material/Box"
 
 const PageHeading = (props) => {
   const { heading } = props
@@ -12,19 +13,19 @@ const PageHeading = (props) => {
         py: 20,
       }}
     >
-      <Typography
-        variant="h2"
-        sx={{
-          borderLeft: 1,
-          borderColor: "primary.main",
-          borderWidth: "8px",
-          lineHeight: 1,
-          pl: 0.5,
-          fontWeight: 500,
-        }}
-      >
-        {heading}
-      </Typography>
+      <Box sx={{ display: "inline-flex" }}>
+        <Typography
+          variant="h2"
+          sx={{
+            borderBottom: 1,
+            borderColor: "primary.main",
+            borderWidth: "8px",
+            fontWeight: 500,
+          }}
+        >
+          {heading}
+        </Typography>
+      </Box>
     </Container>
   )
 }
