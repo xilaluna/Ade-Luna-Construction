@@ -10,7 +10,7 @@ import Person from "./Person"
 
 const SocialProof = () => {
   return (
-    <Box sx={{ backgroundColor: "grey.100", py: 5 }}>
+    <Box sx={{ backgroundColor: "grey.100", py: 10  }}>
       <Container maxWidth="lg">
         <Typography
           align="center"
@@ -31,8 +31,7 @@ const SocialProof = () => {
         </Typography>
         <Grid container spacing={4}>
           {data.map((obj) => {
-            const { name, quote } = obj
-            return <Person name={name} quote={quote} />
+            return <Person {...obj} key={obj.id} />
           })}
         </Grid>
       </Container>

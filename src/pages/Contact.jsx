@@ -1,19 +1,16 @@
 import React from "react"
 
-import Container from "@mui/material/Container"
-import Typography from "@mui/material/Typography"
-
+import Box from "@mui/material/Box"
 import ContactForm from "../components/ContactForm/ContactForm"
+import PageHeading from "../components/PageHeading/PageHeading"
 
 const Contact = () => {
   return (
     <React.Fragment>
-      <Typography variant="h3" sx={{ textAlign: "center", py: 6 }}>
-        Contact
-      </Typography>
-      <Container maxWidth="sm">
+      <PageHeading heading={"Contact"} />
+      <Box sx={{ backgroundColor: "#f5f5f5", py: 10 }}>
         <ContactForm />
-      </Container>
+      </Box>
     </React.Fragment>
   )
 }
