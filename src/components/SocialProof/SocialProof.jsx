@@ -10,7 +10,7 @@ import Person from "./Person"
 
 const SocialProof = () => {
   return (
-    <Box sx={{ backgroundColor: "grey.100", py: 10  }}>
+    <Box sx={{ backgroundColor: "grey.100", py: 10 }}>
       <Container maxWidth="lg">
         <Typography
           align="center"

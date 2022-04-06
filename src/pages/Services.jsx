@@ -1,16 +1,13 @@
 import React from "react"
 
-import Typography from "@mui/material/Typography"
 import Container from "@mui/material/Container"
-
 import ServiceCards from "../components/ServiceCards/ServiceCards"
+import PageHeading from "../components/PageHeading/PageHeading"
 
 const Services = () => {
   return (
     <React.Fragment>
-      <Typography variant="h3" sx={{ textAlign: "center", py: 4 }}>
-        Services
-      </Typography>
+      <PageHeading heading="Services" />
       <Container maxWidth="md">
         <ServiceCards />
       </Container>

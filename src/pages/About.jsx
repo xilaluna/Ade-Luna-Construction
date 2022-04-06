@@ -1,13 +1,11 @@
 import React from "react"
 
-import Typography from "@mui/material/Typography"
+import PageHeading from "../components/PageHeading/PageHeading"
 
 const About = () => {
   return (
     <React.Fragment>
-      <Typography variant="h3" sx={{ textAlign: "center", py: 4 }}>
-        About
-      </Typography>
+      <PageHeading heading="About" />
     </React.Fragment>
   )
 }

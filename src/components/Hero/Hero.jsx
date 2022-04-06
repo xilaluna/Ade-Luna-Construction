@@ -18,10 +18,10 @@ const Hero = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
 
-        py: 12,
+        height: "100vh",
       }}
     >
-      <Container maxWidth="sm">
+      <Container maxWidth="sm" sx={{ pt: "25vh" }}>
         <Typography
           component="h1"
           variant="h2"
@@ -32,11 +32,16 @@ const Hero = () => {
           Ade Luna Construction
         </Typography>
         <Typography variant="h5" align="center" color="grey.300" paragraph>
-          Something short and leading about the collection below—its contents, the
-          creator, etc. Make it short and sweet, but not too short so folks don&apos;t
-          simply skip over it entirely.
+          Something short and leading about the collection below—its contents,
+          the creator, etc. Make it short and sweet, but not too short so folks
+          don&apos;t simply skip over it entirely.
         </Typography>
-        <Stack sx={{ pt: 4 }} direction="row" spacing={2} justifyContent="center">
+        <Stack
+          sx={{ pt: 4 }}
+          direction="row"
+          spacing={2}
+          justifyContent="center"
+        >
           <Button component={RouterLink} to="/about" variant="contained">
             Learn More
           </Button>
